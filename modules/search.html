@@ -1,0 +1,160 @@
+<div style="margin-top: 12%">
+	<div ng-show="spinner" align='center'><h6>Searching...</h6></div>
+	<div ng-show="searchform">
+		<h4 style="color: #fff;margin-left: 3.5%;">Search for Roomie</h4>
+		<form ng-model="search">
+			<div class="list">
+			<label class="item item-input">
+				<input type="number" name="price" placeholder="Price" ng-model="search.price">
+			</label>
+			<label class="item item-input">
+				<select name="gender" ng-model="search.gender" ng-mouseenter="base()">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+				</select>
+			</label>
+			<label class="item item-input">
+				<select name="institute" ng-model="search.institute" style="width:60%;">
+					<option value="Abia State University, Uturu">Abia State University, Uturu</option>
+					<option value="Abubakar Tafawa Balewa University, Bauchi">Abubakar Tafawa Balewa University, Bauchi</option>
+					<option value="Adamawa State University Mubi">Adamawa State University Mubi</option>
+					<option value="Adekunle Ajasin University, Akungba">Adekunle Ajasin University, Akungba</option>
+					<option value="Adeniran Ogunsanya College of Education, Ijanikin, Lagos State">Adeniran Ogunsanya College of Education, Ijanikin, Lagos State</option>
+					<option value="Adeyemi College of Education, Ondo, Ondo State">Adeyemi College of Education, Ondo, Ondo State</option>
+					<option value="Ahmadu Bello University, Zaria">Ahmadu Bello University, Zaria</option>
+					<option value="Airforce Institute of Technology (AFIT) Kaduna">Airforce Institute of Technology (AFIT) Kaduna</option>
+					<option value="Akanu Ibiam Federal Polytechnic Unwana, Afikpo, Ebonyi State">Akanu Ibiam Federal Polytechnic Unwana, Afikpo, Ebonyi State</option>
+					<option value="Akwa Ibom State University of Technology, Uyo">Akwa Ibom State University of Technology, Uyo</option>
+					<option value="Alvan Ikoku College of Education, Owerri, Imo State">Alvan Ikoku College of Education, Owerri, Imo State</option>
+					<option value="Ambrose Alli University, Ekpoma">Ambrose Alli University, Ekpoma</option>
+					<option value="Aminu Saleh College of Education, Azare, Bauchi State">Aminu Saleh College of Education, Azare, Bauchi State</option>
+					<option value="Anambra State University of Science & Technology, Uli">Anambra State University of Science & Technology, Uli</option>
+					<option value="Auchi Polytechnic, Auchi, Edo State">Auchi Polytechnic, Auchi, Edo State</option>
+					<option value="Bauchi State University, Gadau">Bauchi State University, Gadau</option>
+					<option value="Bayero University,Kano">Bayero University,Kano</option>
+					<option value="Benue State University, Makurdi">Benue State University, Makurdi</option>
+					<option value="Bukar Abba Ibrahim University, Damaturu">Bukar Abba Ibrahim University, Damaturu</option>
+					<option value="College of Education, Ikere-Ekiti. Ekiti State">College of Education, Ikere-Ekiti. Ekiti State</option>
+					<option value="Cross River State University of Science &Technology, Calabar">Cross River State University of Science &Technology, Calabar</option>
+					<option value="Delta State University Abraka">Delta State University Abraka</option>
+					<option value="Ebonyi State University, Abakaliki">Ebonyi State University, Abakaliki</option>
+					<option value="Ekiti State University">Ekiti State University</option>
+					<option value="Enugu State College of Education (Technical), Enugu State">Enugu State College of Education (Technical), Enugu State</option>
+					<option value="Enugu State University of Science and Technology, Enugu">Enugu State University of Science and Technology, Enugu</option>
+					<option value="Fed College of Education (Technical), Omoku, Rivers State">Fed College of Education (Technical), Omoku, Rivers State</option>
+					<option value="Federal College of Education (Special) Oyo, Oyo State">Federal College of Education (Special) Oyo, Oyo State</option>
+					<option value="Federal College of Education (Technical) (Female Only) Gusau, Zamfara State">Federal College of Education (Technical) (Female Only) Gusau, Zamfara State</option>
+					<option value="Federal College of Education (Technical) Gombe, Gombe State">Federal College of Education (Technical) Gombe, Gombe State</option>
+					<option value="Federal College of Education (Technical) Potiskum, Yobe State">Federal College of Education (Technical) Potiskum, Yobe State</option>
+					<option value="Federal College of Education (Technical) Umunze, Anambra State">Federal College of Education (Technical) Umunze, Anambra State</option>
+					<option value="Federal College of Education (Technical), Akoka, Lagos State">Federal College of Education (Technical), Akoka, Lagos State</option>
+					<option value="Federal College of Education (Technical), Asaba, Delta State">Federal College of Education (Technical), Asaba, Delta State</option>
+					<option value="Federal College of Education (Technical), Bichi, Kano State">Federal College of Education (Technical), Bichi, Kano State</option>
+					<option value="Federal College of Education, Eha-Amufu, Enugu State">Federal College of Education, Eha-Amufu, Enugu State</option>
+					<option value="Federal College of Education, Kano, Kano State">Federal College of Education, Kano, Kano State</option>
+					<option value="Federal College of Education, Katsina State">Federal College of Education, Katsina State</option>
+					<option value="Federal College of Education, Obudu, Cross River State">Federal College of Education, Obudu, Cross River State</option>
+					<option value="Federal College of Education, Okene, Kogi State">Federal College of Education, Okene, Kogi State</option>
+					<option value="Federal College of Education, Osiele, Abeokuta, Ogun State">Federal College of Education, Osiele, Abeokuta, Ogun State</option>
+					<option value="Federal College of Education, Pankshin, Plateau State">Federal College of Education, Pankshin, Plateau State</option>
+					<option value="Federal College of Education, Yola, Adamawa State">Federal College of Education, Yola, Adamawa State</option>
+					<option value="Federal College of Education, Zaria, Kaduna State">Federal College of Education, Zaria, Kaduna State</option>
+					<option value="Federal Polytechnic Ado Ekiti, Ekiti State">Federal Polytechnic Ado Ekiti, Ekiti State</option>
+					<option value="Federal Polytechnic Bali, Taraba State">Federal Polytechnic Bali, Taraba State</option>
+					<option value="Federal Polytechnic Bauchi,Bauchi State">Federal Polytechnic Bauchi,Bauchi State</option>
+					<option value="Federal Polytechnic Bida,Niger State">Federal Polytechnic Bida,Niger State</option>
+					<option value="Federal Polytechnic Damaturu,Yobe State">Federal Polytechnic Damaturu,Yobe State</option>
+					<option value="Federal Polytechnic Ede, Osun State">Federal Polytechnic Ede, Osun State</option>
+					<option value="Federal Polytechnic Ekowe, Bayelsa State">Federal Polytechnic Ekowe, Bayelsa State</option>
+					<option value="Federal Polytechnic Idah Kogi State">Federal Polytechnic Idah Kogi State</option>
+					<option value="Federal Polytechnic Ilaro, Ogun State">Federal Polytechnic Ilaro, Ogun State</option>
+					<option value="Federal Polytechnic Ile-Oluji, Ondo State">Federal Polytechnic Ile-Oluji, Ondo State</option>
+					<option value="Federal Polytechnic Kaura Namoda, Zamfara State">Federal Polytechnic Kaura Namoda, Zamfara State</option>
+					<option value="Federal Polytechnic Mubi, Adamawa State">Federal Polytechnic Mubi, Adamawa State</option>
+					<option value="Federal Polytechnic Nasarawa, Nasarawa State">Federal Polytechnic Nasarawa, Nasarawa State</option>
+					<option value="Federal Polytechnic Nekede, Owerri, Imo State">Federal Polytechnic Nekede, Owerri, Imo State</option>
+					<option value="Federal Polytechnic Offa, Kwara State">Federal Polytechnic Offa, Kwara State</option>
+					<option value="Federal Polytechnic Oko, Anambra State">Federal Polytechnic Oko, Anambra State</option>
+					<option value="Federal Polytechnic Ukana, Akwa Ibom State">Federal Polytechnic Ukana, Akwa Ibom State</option>
+					<option value="Federal Polytechnic of Oil and Gas Bonny, Rivers State">Federal Polytechnic of Oil and Gas Bonny, Rivers State</option>
+					<option value="Federal University Gashua">Federal University Gashua</option>
+					<option value="Federal University of Petroleum Resources, Effurun">Federal University of Petroleum Resources, Effurun</option>
+					<option value="Federal University of Technology, Akure">Federal University of Technology, Akure</option>
+					<option value="Federal University of Technology, Minna">Federal University of Technology, Minna</option>
+					<option value="Federal University of Technology, Owerri">Federal University of Technology, Owerri</option>
+					<option value="Federal University, Birnin Kebbi">Federal University, Birnin Kebbi</option>
+					<option value="Federal University, Dutse, Jigawa State">Federal University, Dutse, Jigawa State</option>
+					<option value="Federal University, Dutsin-Ma, Katsina">Federal University, Dutsin-Ma, Katsina</option>
+					<option value="Federal University, Gusau">Federal University, Gusau</option>
+					<option value="Federal University, Kashere, Gombe State">Federal University, Kashere, Gombe State</option>
+					<option value="Federal University, Lafia, Nasarawa State">Federal University, Lafia, Nasarawa State</option>
+					<option value="Federal University, Lokoja, Kogi State">Federal University, Lokoja, Kogi State</option>
+					<option value="Federal University, Ndufu-Alike, Ebonyi State">Federal University, Ndufu-Alike, Ebonyi State</option>
+					<option value="Federal University, Otuoke, Bayelsa">Federal University, Otuoke, Bayelsa</option>
+					<option value="Federal University, Oye-Ekiti, Ekiti State">Federal University, Oye-Ekiti, Ekiti State</option>
+					<option value="Federal University, Wukari, Taraba State">Federal University, Wukari, Taraba State</option>
+					<option value="Federal college of Education, Kontagora Niger State">Federal college of Education, Kontagora Niger State</option>
+					<option value="Gombe State University, Gombe">Gombe State University, Gombe</option>
+					<option value="Hussaini Adamu Federal Polytechnic, Kazaure Jigawa State">Hussaini Adamu Federal Polytechnic, Kazaure Jigawa State</option>
+					<option value="Ibrahim Badamasi Babangida University, Lapai">Ibrahim Badamasi Babangida University, Lapai</option>
+					<option value="Ignatius Ajuru University of Education, Rumuolumeni">Ignatius Ajuru University of Education, Rumuolumeni</option>
+					<option value="Imo State College of Education, Ihitte Uboma">Imo State College of Education, Ihitte Uboma</option>
+					<option value="Imo State University, Owerri">Imo State University, Owerri</option>
+					<option value="Kaduna Polytechnic, Kaduna">Kaduna Polytechnic, Kaduna</option>
+					<option value="Kwara State College of Education (Technical) Lafiagi">Kwara State College of Education (Technical) Lafiagi</option>
+					<option value="Kwara State College of Education, Ilorin">Kwara State College of Education, Ilorin</option>
+					<option value="Kwara State College of Education, Oro">Kwara State College of Education, Oro</option>
+					<option value="Michael Okpara University of Agriculture, Umudike">Michael Okpara University of Agriculture, Umudike</option>
+					<option value="Modibbo Adama University of Technology, Yola">Modibbo Adama University of Technology, Yola</option>
+					<option value="National Institute of Construction Technology Uromi">National Institute of Construction Technology Uromi</option>
+					<option value="National Open University of Nigeria, Lagos">National Open University of Nigeria, Lagos</option>
+					<option value="Nigerian Army Institute of Technology and Environmental Studies (NAITES) Makurdi">Nigerian Army Institute of Technology and Environmental Studies (NAITES) Makurdi</option>
+					<option value="Nigerian Defence Academy,Kaduna">Nigerian Defence Academy,Kaduna</option>
+					<option value="Nnamdi Azikiwe University, Awka">Nnamdi Azikiwe University, Awka</option>
+					<option value="Nwafor Orizu College of Education, Nsugbe">Nwafor Orizu College of Education, Nsugbe</option>
+					<option value="Obafemi Awolowo University,Ile-Ife">Obafemi Awolowo University,Ile-Ife</option>
+					<option value="Ozigis College of Education">Ozigis College of Education</option>
+					<option value="Petroleum Training Institute (PTI) Effurun">Petroleum Training Institute (PTI) Effurun</option>
+					<option value="Police Academy Wudil">Police Academy Wudil</option>
+					<option value="Sa'adatu Rimi College of Education Kumbotso, Kano">Sa'adatu Rimi College of Education Kumbotso, Kano</option>
+					<option value="Tai Solarin College of Education, Omu-Ijebu, Ogun">Tai Solarin College of Education, Omu-Ijebu, Ogun</option>
+					<option value="Taraba State College of Education, Zing">Taraba State College of Education, Zing</option>
+					<option value="University of Abuja, Gwagwalada">University of Abuja, Gwagwalada</option>
+					<option value="University of Agriculture, Abeokuta">University of Agriculture, Abeokuta</option>
+					<option value="University of Agriculture, Makurdi">University of Agriculture, Makurdi</option>
+					<option value="University of Benin">University of Benin</option>
+					<option value="University of Calabar">University of Calabar</option>
+					<option value="University of Ibadan">University of Ibadan</option>
+					<option value="University of Ilorin">University of Ilorin</option>
+					<option value="University of Jos">University of Jos</option>
+					<option value="University of Lagos">University of Lagos</option>
+					<option value="University of Maiduguri">University of Maiduguri</option>
+					<option value="University of Nigeria, Nsukka">University of Nigeria, Nsukka</option>
+					<option value="University of Port-Harcourt">University of Port-Harcourt</option>
+					<option value="University of Uyo">University of Uyo</option>
+					<option value="Usumanu Danfodiyo University">Usumanu Danfodiyo University</option>
+					<option value="Waziri Umaru Federal Polytechnic, Birnin Kebbi">Waziri Umaru Federal Polytechnic, Birnin Kebbi</option>
+					<option value="Yaba College of Technology, Yaba, Lagos State">Yaba College of Technology, Yaba, Lagos State</option>
+					<option value="Yusufu Bala Usman College of Legal and General Studies, Daura, Katsina State">Yusufu Bala Usman College of Legal and General Studies, Daura, Katsina State</option>
+				</select>
+			</label><br>
+			<button class="button sub-btn" ng-click="submit()">Submit</button>
+			</div>
+		</form>
+	</div>
+	<h4 align="center"><i class="major fa fa-arrow-circle-left links" ng-show="searchBackShow" ng-click="searchBack()"> Back</i></h4>
+	<div ng-show="searchinfo">
+		<div ng-repeat="content in contents">
+			<div class="item">
+					<div style="background-color: white; border-radius:4px; padding-left:3px; padding-top:5px; padding-bottom: 5px;">
+						<p>Posted by {{content.name}}</p>
+						<p>Price: {{content.price}}</p>
+						<p>{{content.gender}}</p>
+						<p>{{content.institute}}</p>
+						<i class="major fa fa-phone-square callPlace" ng-click="call(numberid={{content.number}})"> Call</i>
+					</div>
+			</div>
+		</div>
+            <div style="width:100%;height:100px;"></div>
+	</div>
+</div>

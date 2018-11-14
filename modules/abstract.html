@@ -1,0 +1,27 @@
+<ion-side-menus>
+	<ion-side-menu-content>
+<div class="bar bar-header bar-porogative" style="position: fixed;">
+	<i class="icon major fa fa-navicon ritle" ng-click="menu()"></i>
+	<p class="ritle rit">R<span class="oomie-style">OOMIE!</span></p>
+</div>
+	<div ui-view="feeds" class="feeds" style="overflow: scroll !important;">
+		
+	</div>
+
+<div class="bar bar-footer bar-footative" ></div>
+
+</ion-side-menu-content>
+<ion-side-menu side='left' width=240 style="background-color: #293d3d;">
+	<ion-content>
+	<div class="bar bar-header bar-porogative menu-bar"><p class="ritle rit">R<span class="oomie-style">OOMIE!</span></p></div><br><br><br><br><br><br>
+	<div style="padding-left: 5%;">
+		<a ui-sref="abstract" menu-close class="links"><i class="major fa fa-home"></i><span class="menu-style">Home</span></a><br><br>
+		<a ui-sref="abstract.details" menu-close class="links"><i class="major fa fa-envelope"></i><span class="menu-style">Post</span></a><br><br>
+		<a ui-sref="abstract.search" class="links" menu-close><i class="major fa fa-search"></i><span class="menu-style">Search</span></a><br><br>
+		<a ui-sref="abstract.problem" class="links" menu-close><i class="major fa fa-exclamation-triangle"></i><span class="menu-style">Report a problem</span></a><br><br>
+		<a ui-sref="abstract.disclaimer" class="links" menu-close><i class="major fa fa-ban"></i><span class="menu-style">Disclaimer</span></a><br><br>
+<!-- 		<span ng-click="share()" menu-close><i class="major fa fa-share links"></i><span class="menu-style">Share</span></span><br><br>
+ -->	</div>
+	</ion-content>
+</ion-side-menu>
+</ion-side-menus>

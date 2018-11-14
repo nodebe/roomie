@@ -1,0 +1,122 @@
+body{
+	background-color: #476b6b;
+}
+*{
+	box-sizing: border-box;
+}
+.bar-porogative{
+	background-color: #009973;
+	padding-left: 5%;
+	padding-top: 4%;
+	padding-bottom: 10%;
+	height: 13%;
+}
+.callPlace{
+	background-color: green;
+	color: white;
+	padding: 4px;
+}
+.spine{
+	margin-left: 45%;
+	font-size: 24px;
+}
+.bar-footative{
+	margin-top:10%;
+	background-color: #476b6b;
+}
+.ritle{
+	color: #fff;
+	font-size: 1.5em;
+}
+.rit{
+	margin-left: 7%;
+}
+.feeds{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #476b6b;
+	margin-top: 13%;
+	overflow: scroll !important;
+}
+.bar-feed{
+	background-color: #009973;
+	color: #fff;
+	height: auto;
+	padding-left: 14%;
+}
+.menu-bar{
+	height: 17%;
+	padding-bottom: 10%;
+}
+.oomie-style{
+	font-size: .7em;
+}
+.links{
+	color: #fff;
+}
+.menu-style{
+	font-family: monospace;
+	color: #fff;
+	margin-left: 5%;
+}
+a{
+	text-decoration: none;
+}
+.close-box{
+	text-align: center;
+	margin-top: 40%;
+	margin-left: 10%;
+	padding: 2%;
+	width: 80%;
+	background-color: #009973;
+	height: auto;
+	color: #fff;
+}
+.but1{
+	margin-left: -10px;
+}
+.but2{
+	margin-left: 10px;
+}
+.item{
+	background-color: rgba(234, 234, 234, 0.3);
+}
+input{
+	color: #fff;
+}
+select{
+	background-color: rgba(234, 234, 234, 0.3);
+	color: #fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.sub-btn{
+	float: right;
+	background-color: #009973;
+	color: #fff;
+	margin-right: 2%;
+}/*
+@media only screen and (orientation:portrait){
+	.feeds{
+		margin-top: 21%;
+	}
+}*/
+.prob{
+	text-align: justify;
+	color: #fff;
+	padding: 4px;
+}
+.pro_icon{
+	color: #fff;
+}
+.me_img{
+	width: 100px;
+	height: 100px;
+	border-radius: 80px;
+	margin-left: 35%;
+	margin-top: 10%;
+}
+.envel{
+	margin-left: 10%;
+}
